@@ -17,6 +17,7 @@
   "type": "commonjs",
   "dependencies": {
     "@fastify/env": "^5.0.2",
+    "@fastify/multipart": "^9.0.3",
     "@langchain/core": "^0.3.66",
     "@mozilla/readability": "^0.6.0",
     "axios": "^1.11.0",
@@ -24,7 +25,9 @@
     "fastify": "^5.4.0",
     "jsdom": "^26.1.0",
     "langchain": "^0.3.30",
+    "mammoth": "^1.10.0",
     "openai": "^5.11.0",
+    "pdf-parse": "^1.1.1",
     "puppeteer": "^24.15.0",
     "puppeteer-cluster": "^0.24.0",
     "remove-markdown": "^0.6.2",
@@ -33,6 +36,7 @@
   "devDependencies": {
     "@types/jsdom": "^21.1.7",
     "@types/node": "^24.1.0",
+    "@types/pdf-parse": "^1.1.5",
     "@types/turndown": "^5.0.5",
     "nodemon": "^3.0.0",
     "ts-node": "^10.9.2",

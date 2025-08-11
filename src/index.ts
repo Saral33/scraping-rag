@@ -4,7 +4,7 @@ import { initCluster, getCluster } from './cluster'
 import errorHandler from './middleware/error/errorMiddleware'
 import { envSchema } from './envSchema'
 import fastifyEnv from '@fastify/env';
-
+import multipart from '@fastify/multipart';
 
 const server = fastify({
 
@@ -17,8 +17,13 @@ server.addHook('onRequest', (request, reply, done) => {
     done();
 });
 
+//Register 3rd party plugins
+server.register(multipart)
+
+// Register custom 
 server.register(errorHandler);
 server.register(routes);
+
 
 
 
